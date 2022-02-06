@@ -1,9 +1,13 @@
-//该文件是用于login页面里面tab的view
-//为了防止页面太混乱所以我们把页面的里面的页面 分离到这里，方便管理
+
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:jk_music_app/theme.dart';
+
+
+//该文件是用于login页面里面tab的view
+//为了防止页面太混乱所以我们把页面的里面的页面 分离到这里，方便管理
+
 //StatelessWidget面向那些始终不变的UI控件，比如标题栏中的标题；
 // 而StatefulWidget则是面向可能会改变UI状态的控件，比如有点击反馈的按钮。
 class LoginForm extends StatefulWidget {

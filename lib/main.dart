@@ -21,6 +21,8 @@ class JKMusic extends StatelessWidget {
     return MaterialApp(
       //在手机中安装app的名字
       title: '捷凯音乐',
+      //debugShowCheckedModeBanner :false  =去掉右上角的DEBUG标签
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         //当前主题色
         primarySwatch: primary,
