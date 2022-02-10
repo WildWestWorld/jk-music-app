@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 // 而StatefulWidget则是面向可能会改变UI状态的控件，比如有点击反馈的按钮。
 
 //静态页面脚手架
-class Cli extends StatelessWidget {
-  const Cli({Key? key}) : super(key: key);
+class YourName extends StatelessWidget {
+  const YourName({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    //Home显示主界面
+    //可选值 Scaffold（body只能Scaffold用） Container Stack
     return  Scaffold(
       body: Center(
         child: Text("首页"),
