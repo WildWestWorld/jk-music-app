@@ -1,9 +1,12 @@
 
 import 'package:flutter/material.dart';
 
-import 'categoryBannerComponent/category_card.dart';
+import 'category_card.dart';
 //StatelessWidget面向那些始终不变的UI控件，比如标题栏中的标题；
 // 而StatefulWidget则是面向可能会改变UI状态的控件，比如有点击反馈的按钮。
+
+
+//作废，但是有保存价值
 
 //Home头部组件，滑动列表图片
 class CategoryBanner extends StatelessWidget {

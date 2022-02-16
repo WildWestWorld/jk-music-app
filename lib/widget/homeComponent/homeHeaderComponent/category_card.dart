@@ -22,6 +22,8 @@ class CategoryCard extends StatelessWidget {
     return Container(
         width: 140,
         height: 220,
+        // clipBehavior: Clip.hardEdge, 隐藏掉图片超出边界的部分
+        clipBehavior: Clip.hardEdge,
         //倒圆角，虽然我们图片已经自带圆角，但是也许以后放的图片不是圆角的形式。所以我们为了样式统一，给这个card倒个圆角
         //这个decoration会直接作用在container上面
         decoration: const BoxDecoration(
