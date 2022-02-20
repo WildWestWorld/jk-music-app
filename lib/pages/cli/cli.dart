@@ -9,7 +9,7 @@ class YourName extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //可选值 Scaffold（body只能Scaffold用） Container Stack
+    //可选值 Scaffold（body只能Scaffold（主界面）用） Container Stack
     return  Scaffold(
       body: Center(
         child: Text("首页"),
