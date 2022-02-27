@@ -33,7 +33,7 @@ class HomeHeader extends StatelessWidget {
             CategoryCard(title: "嘻哈",
                 description: "1.4万播放量",
                 image: 'lib/assets/images/banner.png',
-                onPress: ()=>{print("跳转")} ),
+                onPress: ()=>{Navigator.pushNamed(context, '/playlist/detail')} ),
             CategoryCard(title: "嘻哈",
                 description: "1.4万播放量",
                 image: 'lib/assets/images/banner.png',

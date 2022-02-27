@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:jk_music_app/api/hello.dart';
-import 'package:jk_music_app/pages/home.dart';
-import 'package:jk_music_app/pages/login.dart';
+import 'package:jk_music_app/pages/home/home.dart';
+import 'package:jk_music_app/pages/login/login.dart';
+import 'package:jk_music_app/pages/playList/playListDetail.dart';
 import 'package:jk_music_app/theme.dart';
 
 
@@ -34,7 +35,8 @@ class JKMusic extends StatelessWidget {
       routes: {
         //Router中引入Home页面，路径为'/'
         '/':(context)=>const Home(),
-        '/login':(context)=>const Login()
+        '/login':(context)=>const Login(),
+        '/playlist/detail':(context)=> const PlayListDetail(),
       },
 
     );
