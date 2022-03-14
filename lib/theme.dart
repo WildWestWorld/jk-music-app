@@ -32,7 +32,7 @@ const TabBarTheme tabBarTheme =TabBarTheme(
 const Color primaryColor =Color(0xFF002150);
 const Color secondaryColor =Color(0xFF7A869A);
 
-
+const Color btnSecondaryColor=Color(0xFFE5ECF9);
 
 const TextStyle primaryText =TextStyle(fontSize: 16,color: Color(0xFF002150));
 const TextStyle secondaryText =TextStyle(fontSize: 12,color: Color(0xFF7A869A));

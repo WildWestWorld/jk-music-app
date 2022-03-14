@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:jk_music_app/widget/commonComponent/button/CircleButton.dart';
+import 'package:jk_music_app/widget/commonComponent/button/CirleButtonSvgLabel.dart';
 import 'package:jk_music_app/widget/homeComponent/lastPlayMusicList.dart';
 import 'package:jk_music_app/widget/playListDetailComponent/playListDetailHeader.dart';
 
@@ -42,7 +43,12 @@ class _PlayListDetailState extends State<PlayListDetail> {
                    mainAxisAlignment: MainAxisAlignment.center,
 
                    children: <Widget>[
-                   CircleButton(name: "播放",)
+                     CircleButton(width: 221,text: "播放",),
+                     SizedBox(width: 10,),
+
+                     CircleButtonSvgLabel(svgPicture:"lib/assets/icons/down-load.svg",width: 44,color: btnSecondaryColor,borderRadius:10),
+
+
                 ],),
 
                 ),

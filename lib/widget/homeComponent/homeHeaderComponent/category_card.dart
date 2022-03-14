@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 //home头部的图片滑动图 用于跳转各个分类
 class CategoryCard extends StatelessWidget {
   //required 意味着我们必须传入的参数
-  const CategoryCard({Key? key, required this.title, required this.description , required this.image,required this.onPress}) : super(key: key);
+  const CategoryCard({Key? key, required this.title, required this.description , required this.image,  required this.onPress}) : super(key: key);
 
   final String title,description,image;
   //定义 onPress 为函数
