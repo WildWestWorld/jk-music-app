@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:jk_music_app/theme.dart';
+import 'package:jk_music_app/widget/commonComponent/bottomBar/tab_item.dart';
 import 'package:jk_music_app/widget/homeComponent/homeHeader.dart';
 import 'package:jk_music_app/widget/homeComponent/lastPlayMusicList.dart';
 import 'package:jk_music_app/widget/homeComponent/musicianBanner.dart';
@@ -18,6 +20,42 @@ class Home extends StatelessWidget {
     //Home显示主界面
     //可选值 Scaffold（body只能Scaffold用） Container Stack
     return Scaffold(
+      //底部导航栏
+        bottomNavigationBar: Container(
+          padding: const EdgeInsets.only(left: 64,top: 9,right: 64),
+          height: 80,
+          child: Row(
+            //沿着主轴按照照片/容器数量均匀分布
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              TabItem(
+                  unactivatedIconPath:"lib/assets/icons/home.svg",
+                  active: true,
+                  activatedIconPath:"lib/assets/icons/home-active.svg",
+                  text: "首页",
+                  onPress: (){},
+              ),
+              TabItem(
+                unactivatedIconPath:"lib/assets/icons/search.svg",
+                active: false,
+                activatedIconPath:"lib/assets/icons/search-active.svg",
+                text: "搜索",
+                onPress: (){},
+
+              ),
+              TabItem(
+                unactivatedIconPath:"lib/assets/icons/lib.svg",
+                active: false,
+                activatedIconPath:"lib/assets/icons/lib-active.svg",
+                text: "音乐库",
+                onPress: (){},
+
+              ),
+
+
+            ],
+          ),
+        ),
         body:SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
@@ -69,3 +107,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+

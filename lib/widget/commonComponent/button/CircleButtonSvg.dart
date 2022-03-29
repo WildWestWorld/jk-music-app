@@ -3,21 +3,22 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../theme.dart';
 
-class CircleButtonSvgLabel extends StatelessWidget {
-  const CircleButtonSvgLabel({
-    Key? key,this.width=44, this.color=primary,this.borderRadius=10,required this.svgPicture,
+class CircleButtonSvg extends StatelessWidget {
+  const CircleButtonSvg({
+    Key? key,this.width=44,this.color=primary,this.borderRadius=10,this.svgPicture=""
   }) : super(key: key);
 
   final double width;
   final double borderRadius;
-  final String  svgPicture;
+  final String svgPicture;
 
 
   final Color color;
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton.icon(onPressed: (){}, icon: SvgPicture.asset(svgPicture), label: Text("测试"),
+    return ElevatedButton(onPressed: (){}, child:SvgPicture.asset(svgPicture),
+      //设置按钮的样式
       style: ButtonStyle(
 
         //按钮的颜色
@@ -27,6 +28,5 @@ class CircleButtonSvgLabel extends StatelessWidget {
         //倒圆角
         shape:MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(borderRadius)))),
       ),);
-
   }
 }
